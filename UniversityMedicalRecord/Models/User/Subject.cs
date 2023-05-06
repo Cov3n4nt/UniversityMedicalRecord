@@ -3,6 +3,6 @@
 public class Subject
 {
     public int Id { get; set; }
-    public Student Student { get; set; }
-    public College College { get; set; }
+    public  User user { get; set; }
+    public UserPosition UserPosition { get; set; }
 }

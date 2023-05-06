@@ -1,8 +1,8 @@
 ﻿namespace UniversityMedicalRecord.Models.User;
 
-public class Student
+public class User
 {
-    public int StudentId { get; set; }
+    public int Id { get; set; }
     public string Firstname { get; set; }
     public string? Middlename { get; set; }
     public string Lastname { get; set; }

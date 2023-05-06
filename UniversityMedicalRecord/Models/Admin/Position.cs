@@ -1,6 +1,6 @@
 ﻿namespace UniversityMedicalRecord.Models.Admin;
 
-public class Position
+public enum Position
 {
     
 }
