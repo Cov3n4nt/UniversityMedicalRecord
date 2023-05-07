@@ -10,10 +10,6 @@ public enum Gender
 
 public class MedicalRecord
 {
-    public Subject Subject { get; set;}
-    public string Age { get; set; }
-    public Gender Gender { get; set; } 
-    public DateOnly DateOfBirth { get; set; } 
-    public string Address { get; set; } 
+    
     // ???
 }
