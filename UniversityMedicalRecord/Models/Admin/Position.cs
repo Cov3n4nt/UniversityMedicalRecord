@@ -2,5 +2,6 @@
 
 public enum Position
 {
-    
+    RegularAdmin,
+    SuperAdmin
 }

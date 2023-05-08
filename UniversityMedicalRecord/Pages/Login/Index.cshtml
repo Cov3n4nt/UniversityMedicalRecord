@@ -2,40 +2,55 @@
 @model UniversityMedicalRecord.Pages.Login.IndexModel
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Login";
 }
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <title></title>
 </head>
 <body>
-<div>
-    <div class="row d-flex justify-content-md-center align-items-center vh-100">
-        <div class="col-md-4 rounded-rectangle">
-            <h2 class="mb-2">Login</h2>
-            <form method="post">
-                <div class="form-group">
-                    <label asp-for="Username" class="control-label"></label>
-                    <input asp-for="Username" class="form-control"/>
-                    <span asp-validation-for="Username" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Password" class="control-label"></label>
-                    <input asp-for="Password" class="form-control"/>
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                &nbsp;
+<section class="vh-100" style="background-color: #0072A0;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <div class="col-mb-5 col-lg-5 d-none d-md-block">
+                            <img src="https://img.freepik.com/premium-vector/bright-red-blue-tech-corporate-background_88343-3589.jpg?w=996" class="img-fluid" style="border-radius: 1rem 0 0 1rem;"/>
+                        </div>
 
-                <div class="form-group">
-                    <input type="submit" value="Login" class="btn btn-primary"/>
-                </div>
-            </form>
+                        <div class="col-md-4 col-lg-6 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-4 text-black">
 
+                                <h2 class="mb-2">Login</h2>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <label asp-for="Username" class="control-label"></label>
+                                        <input asp-for="Username" placeholder="Enter Username" class="form-control"/>
+                                        <span asp-validation-for="Username" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Password" class="control-label"></label>
+                                        <input asp-for="Password" type="password" placeholder="Enter Username" class="form-control"/>
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+
+                                    &nbsp;
+                                    <div class="form-group">
+                                        <input type="submit" value="Login" class="btn btn-primary"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
+</section>
 </body>
 </html>

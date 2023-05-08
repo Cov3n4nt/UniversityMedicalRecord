@@ -36,5 +36,14 @@ public class DatabaseContext: DbContext
         return users;
     }
     
+    public GenericUser? GetUser(int id)
+    {
+        return GetUsers().FirstOrDefault(x => x.Id == id);
+    }
+
+    public bool HasSuperAdmin()
+    {
+        return AdminRoles.Any(x => x.Position == Position.SuperAdmin);
+    }
     
 }

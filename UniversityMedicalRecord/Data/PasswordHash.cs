@@ -3,7 +3,7 @@ using System.Text;
 
 namespace UniversityMedicalRecord.Data;
 
-public static class PasswordHash
+public static class Hash
 {
     public static string ComputeHash(this string plainText, byte[] salt)
     {

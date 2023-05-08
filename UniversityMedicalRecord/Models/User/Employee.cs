@@ -7,8 +7,7 @@ public class Employee : GenericUser
     public override string? Middlename { get; set; }
     public override string Lastname { get; set; }
     public override string Username { get; set; }
-    public override string Password { get; set; }
-    public override string Email { get; set; }
+
     public override string PasswordHash { get; set; }
     public override string PasswordSalt { get; set; }
 }
