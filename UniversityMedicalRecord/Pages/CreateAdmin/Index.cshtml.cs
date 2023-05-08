@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using UniversityMedicalRecord.Data;
 
-namespace UniversityMedicalRecord.Pages.CrreateAdmin;
+namespace UniversityMedicalRecord.Pages.CreateAdmin;
 
 public class IndexModel : PageModel
 {

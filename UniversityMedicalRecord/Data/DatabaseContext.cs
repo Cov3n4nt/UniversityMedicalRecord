@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UniversityMedicalRecord.Models;
 using UniversityMedicalRecord.Models.Admin;
 using UniversityMedicalRecord.Models.User;
 
@@ -25,6 +26,14 @@ public class DatabaseContext: DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(CONNECTION_STRING);
+    }
+    
+    public List<GenericUser> GetUsers()
+    {
+        var users = Admins.Select(x => x as GenericUser).ToList();
+        var employees = Employees.Select(x => x as GenericUser).ToList();
+        users.AddRange(employees);
+        return users;
     }
     
     

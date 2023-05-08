@@ -1,12 +1,16 @@
-﻿namespace UniversityMedicalRecord.Models.Admin;
+﻿using UniversityMedicalRecord.Models.User;
 
-public class Admin
+namespace UniversityMedicalRecord.Models.Admin;
+
+public class Admin : GenericUser
 {
-    public int Id { get; set; }
-    public string FirstName { get; set; }
-    public string? MiddleName { get; set; }
-    public string LastName { get; set; }
-    public string UserName { get; set; }
-    public string PasswordHash { get; set; }
-    public string PasswordSalt { get; set; }
+    public override int Id { get; set; }
+    public override string Firstname { get; set; }
+    public override string? Middlename { get; set; }
+    public override string Lastname { get; set; }
+    public override string Username { get; set; }
+    public override string Password { get; set; }
+    public override string Email { get; set; }
+    public override string PasswordHash { get; set; }
+    public override string PasswordSalt { get; set; }
 }

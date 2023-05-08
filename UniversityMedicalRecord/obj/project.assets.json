@@ -3462,19 +3462,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus\\.nuget\\packages\\": {}
+    "C:\\Users\\blythePC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus\\RiderProjects\\UniversityMedicalRecord\\UniversityMedicalRecord\\UniversityMedicalRecord.csproj",
+      "projectUniqueName": "C:\\Users\\blythePC\\RiderProjects\\UniversityMedicalRecord\\UniversityMedicalRecord\\UniversityMedicalRecord.csproj",
       "projectName": "UniversityMedicalRecord",
-      "projectPath": "C:\\Users\\asus\\RiderProjects\\UniversityMedicalRecord\\UniversityMedicalRecord\\UniversityMedicalRecord.csproj",
-      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus\\RiderProjects\\UniversityMedicalRecord\\UniversityMedicalRecord\\obj\\",
+      "projectPath": "C:\\Users\\blythePC\\RiderProjects\\UniversityMedicalRecord\\UniversityMedicalRecord\\UniversityMedicalRecord.csproj",
+      "packagesPath": "C:\\Users\\blythePC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\blythePC\\RiderProjects\\UniversityMedicalRecord\\UniversityMedicalRecord\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\blythePC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,12 +1,14 @@
 ﻿namespace UniversityMedicalRecord.Models.User;
 
-public class Employee
+public class Employee : GenericUser
 {
-    public int Id { get; set; }
-    public string Firstname { get; set; }
-    public string? Middlename { get; set; }
-    public string Lastname { get; set; }
-    public string Username { get; set; }
-    public string Password { get; set; }
-    public string Email { get; set; }
+    public override int Id { get; set; }
+    public override string Firstname { get; set; }
+    public override string? Middlename { get; set; }
+    public override string Lastname { get; set; }
+    public override string Username { get; set; }
+    public override string Password { get; set; }
+    public override string Email { get; set; }
+    public override string PasswordHash { get; set; }
+    public override string PasswordSalt { get; set; }
 }

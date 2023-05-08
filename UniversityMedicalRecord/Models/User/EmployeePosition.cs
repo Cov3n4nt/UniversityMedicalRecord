@@ -2,7 +2,7 @@
 
 namespace UniversityMedicalRecord.Models.User;
 
-public enum UserPosition
+public enum EmployeePosition
 {
     Student,
     Faculty,
