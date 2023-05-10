@@ -45,5 +45,20 @@ public class DatabaseContext: DbContext
     {
         return AdminRoles.Any(x => x.Position == Position.SuperAdmin);
     }
-    
+
+    public bool AddUser(GenericUser user)
+    {
+        switch (user)
+        {
+            case Admin admin:
+                Admins.Add(admin);
+                break;
+            case Employee employee:
+                Employees.Add(employee);
+                break;
+        }
+        var changesSaved = SaveChanges();
+        return changesSaved > 0;
+    }
+
 }

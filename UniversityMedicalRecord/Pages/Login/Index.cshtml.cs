@@ -36,7 +36,7 @@ public class IndexModel : PageModel
         
         if (user != null && user.PasswordHash == passwordHash)
         {
-            return RedirectToPage("../Index");
+            return RedirectToPage("../Homepage/Index");
         }
         
         return Page();

@@ -1,9 +1,14 @@
 ﻿@page
+@using UniversityMedicalRecord.Data
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using UniversityMedicalRecord.Models
 @model UniversityMedicalRecord.Pages.CreateAdmin.IndexModel
 
+
 @{
-    ViewData["Title"] = "Create Admin";
+    ViewData["Title"] = @Model.PageTitle;
 }
+
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
@@ -28,7 +33,27 @@
                             <div class="card-body p-4 p-lg-4 text-black">
                         
                                 <form method="post">
-                                    <h5 class="fw-normal mb-2 pb-2" style="letter-spacing: 1px;">Create Admin</h5>
+                                    <h5 class="fw-normal mb-2 pb-2" style="letter-spacing: 1px;">@Model.PageTitle</h5>
+                                    @{
+                                        if (!Model.HasSuperAdmin)
+                                        {
+                                            <input type="radio" class="btn-check" value="admin" asp-for="UserType" id="option1" autocomplete="off" checked>
+                                            <label class="btn btn-secondary" for="option1">Admin</label>
+
+                                            <input type="radio" class="btn-check" value="employee" asp-for="UserType" id="option2" autocomplete="off">
+                                            <label class="btn btn-secondary" for="option2">Employee</label>
+                                        }
+
+                                        else
+                                        {
+                                            <input type="radio" class="btn-check" value="admin" asp-for="UserType" id="option1" autocomplete="off" >
+                                            <label class="btn btn-secondary" for="option1">Admin</label>
+
+                                            <input type="radio" class="btn-check" value="employee" asp-for="UserType" id="option2" autocomplete="off" checked>
+                                            <label class="btn btn-secondary" for="option2">Employee</label>
+                                        }
+                                        
+                                    }
                                     
                                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                     <div class="form-outline mb-1 w-75">
@@ -57,10 +82,11 @@
                                         <span asp-validation-for="Password" class="text-danger"></span>
                                     </div>
                                     &nbsp;
-
                                     <div class="form-outline mb-1 w-75">
                                         <input type="submit" value="Create" class="btn btn-primary"/>
                                     </div>
+                                   
+                                    
                                 </form>
                             </div>
                         </div>
